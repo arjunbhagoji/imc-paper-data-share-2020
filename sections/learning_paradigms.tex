@@ -1,1 +1,60 @@
 \section{Learning Paradigms}\label{sec: learning_paradigms}
+
+
+
+\begin{table*}[]
+	\centering
+	\begin{tabular}{@{}llllllll@{}}
+		\toprule
+		\multicolumn{1}{c}{\multirow{2}{*}{Features}} & \multicolumn{5}{c}{Unsupervised}   & \multicolumn{2}{c}{Supervised} \\ \cmidrule(l){2-8} 
+		\multicolumn{1}{c}{}                          & GMM  & IF   & KDE  & OCSVM & PCA   & Random Forest      & SVM       \\ \midrule
+		nfdump                                        & 0.72 & 0.38 & 0.87 & 0.513 & 0.76  & 0.99               & 0.71      \\
+		netml                                         & 0.64 & 0.89 & 0.53 & 0.66  & 0.5   & 0.98               & 0.87      \\
+		flowmeter                                     & NA   & 0.54 & 0.5  &       & 0.375 & 0.99               &           \\ \bottomrule
+	\end{tabular}
+	\caption{Malicious data classification or detection results (All 3 attacks on Friday), 1 agent}
+	\label{tab:monday_benign_friday_mal_all}
+\end{table*}
+
+
+\begin{table*}[]
+	\centering
+	\begin{tabular}{@{}llllllll@{}}
+		\toprule
+		\multicolumn{1}{c}{\multirow{2}{*}{Features}} & \multicolumn{5}{c}{Unsupervised}   & \multicolumn{2}{c}{Supervised} \\ \cmidrule(l){2-8} 
+		\multicolumn{1}{c}{}  & GMM  & IF   & KDE  & OCSVM & PCA   & Random Forest      & SVM       \\ \midrule
+		nfdump     & 0.36  & 0.14  & 0.94 & TODO  &  0.36 &     &      \\
+		netml       & 0.87  & 0.35 & 0.87  & TODO  &  0.86  &              &     \\
+		flowmeter     &  NA  &  0.2  &   &       & 0.77  &              &           \\ \bottomrule
+	\end{tabular}
+	\caption{Malicious data classification or detection results (DDoS on Friday), 1 agent}
+	\label{tab: monday_benign_friday_ddos}
+\end{table*}
+
+\begin{table*}[]
+	\centering
+	\begin{tabular}{@{}llllllll@{}}
+		\toprule
+		\multicolumn{1}{c}{\multirow{2}{*}{Features}} & \multicolumn{5}{c}{Unsupervised}   & \multicolumn{2}{c}{Supervised} \\ \cmidrule(l){2-8} 
+		\multicolumn{1}{c}{}  & GMM  & IF   & KDE  & OCSVM & PCA   & Random Forest      & SVM       \\ \midrule
+		nfdump     & 0.51 $\pm$ 0.12  & 0.14 $\pm$ 0.01  & 0.93 $\pm$ 0.023  & 0.09 $\pm$ 1$\mathrm{e}{-5}$ & 0.37 $\pm$ 0.007  &     &      \\
+		netml       & 0.87 $\pm$ 0.003  & 0.35 $\pm$ 0.02 & 0.83 $\pm$ 0.004  &  0.73  $\pm$ 2$\mathrm{e}{-5}$ &  0.86 $\pm$ 0.007  &              &     \\
+		flowmeter     &  NA   &  0.21 $\pm$ 0.006 &  0.89 $\pm$ 0.04 & 0.22 $\pm$ 4$\mathrm{e}{-4}$  & 0.76 $\pm$ 0.004  &              &           \\ \bottomrule
+	\end{tabular}
+	\caption{Malicious data classification or detection results (DDoS on Friday), 10 agents}
+	\label{tab: monday_benign_friday_ddos_10}
+\end{table*}
+
+\begin{table*}[]
+	\centering
+	\begin{tabular}{@{}llllllll@{}}
+		\toprule
+		\multicolumn{1}{c}{\multirow{2}{*}{Features}} & \multicolumn{5}{c}{Unsupervised}   & \multicolumn{2}{c}{Supervised} \\ \cmidrule(l){2-8} 
+		\multicolumn{1}{c}{}  & GMM  & IF   & KDE  & OCSVM & PCA   & Random Forest      & SVM       \\ \midrule
+		nfdump     & 0.82 $\pm$ 0.05   & 0.14 $\pm$ 0.02  &  0.94 $\pm$ 0.01 & 0.09 $\pm$ 0.003  & 0.29 $\pm$ 0.11  &     &      \\
+		netml       & 0.85 $\pm$ 0.015 & 0.35 $\pm$ 0.02  & 0.51 $\pm$ 0.01 & 0.73 $\pm$ 0.003  &  0.83 $\pm$ 0.03   &              &     \\
+		flowmeter     &    &  &   &       &  &              &           \\ \bottomrule
+	\end{tabular}
+	\caption{Malicious data classification or detection results (DDoS on Friday), 1000 agents}
+	\label{tab: monday_benign_friday_ddos_1000}
+\end{table*}
